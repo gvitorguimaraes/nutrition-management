@@ -15,7 +15,6 @@ public class Patient {
     private UUID id;
 
     @NotNull
-    @Column
     private String name;
 
     @NotNull
@@ -28,7 +27,6 @@ public class Patient {
     private Address address;
 
     @NotNull
-    @Column
     private LocalDate dateOfBirth;
 
     @NotNull
