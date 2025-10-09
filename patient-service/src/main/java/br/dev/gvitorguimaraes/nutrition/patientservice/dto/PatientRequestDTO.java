@@ -1,5 +1,6 @@
 package br.dev.gvitorguimaraes.nutrition.patientservice.dto;
 
+import br.dev.gvitorguimaraes.nutrition.patientservice.dto.validators.CreatePatientValidationGroup;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -14,7 +15,7 @@ public record PatientRequestDTO (
         @Email(message = "Email should be valid")
         String email,
 
-        @NotNull(message = "Address is required")
+        @NotNull(groups = CreatePatientValidationGroup.class, message = "Address is required")
         AddressDTO address,
 
         @NotBlank(message = "Date of birth is required")
