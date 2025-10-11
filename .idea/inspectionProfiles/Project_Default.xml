@@ -6,16 +6,22 @@
       <option name="ignoredModules">
         <list>
           <option value="patientservice" />
+          <option value="billing-service" />
+          <option value="patientservice" />
         </list>
       </option>
       <option name="ignoredPackages">
         <list>
           <option value="org.apache.commons:commons-lang3:3.17.0" />
+          <option value="ch.qos.logback:logback-core:1.5.18" />
+          <option value="ch.qos.logback:logback-core:1.5.18" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
           <option value="Other" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
         </list>
       </option>
     </inspection_tool>
