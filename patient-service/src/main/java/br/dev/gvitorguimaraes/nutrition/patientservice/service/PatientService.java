@@ -4,12 +4,12 @@ import br.dev.gvitorguimaraes.nutrition.patientservice.dto.PatientRequestDTO;
 import br.dev.gvitorguimaraes.nutrition.patientservice.dto.PatientResponseDTO;
 import br.dev.gvitorguimaraes.nutrition.patientservice.exception.InvalidRequestException;
 import br.dev.gvitorguimaraes.nutrition.patientservice.grpc.BillingServiceGrpcClient;
+import br.dev.gvitorguimaraes.nutrition.patientservice.kafka.KafkaProducer;
 import br.dev.gvitorguimaraes.nutrition.patientservice.mapper.PatientMapper;
 import br.dev.gvitorguimaraes.nutrition.patientservice.model.Address;
 import br.dev.gvitorguimaraes.nutrition.patientservice.model.Patient;
 import br.dev.gvitorguimaraes.nutrition.patientservice.repository.PatientRepo;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -20,17 +20,20 @@ public class PatientService {
 
     private final PatientRepo repository;
     private final BillingServiceGrpcClient billingServiceGrpcClient;
+    private final KafkaProducer kafkaProducer;
 
     public PatientService(PatientRepo repository,
-                          BillingServiceGrpcClient billingServiceGrpcClient){
+                          BillingServiceGrpcClient billingServiceGrpcClient,
+                          KafkaProducer kafkaProducer){
 
         this.repository = repository;
         this.billingServiceGrpcClient = billingServiceGrpcClient;
+        this.kafkaProducer = kafkaProducer;
     }
 
     public List<PatientResponseDTO> getPatients(){
         return repository.findAll().stream()
-                .map(patient -> PatientMapper.toDTO(patient)).toList();
+                .map(PatientMapper::toDTO).toList();
     }
 
     private void checkEmailAlreadyExists(String email) throws InvalidRequestException {
@@ -50,6 +53,8 @@ public class PatientService {
                 newPatient.getName(),
                 newPatient.getEmail()
         );
+
+        kafkaProducer.sendEvent(newPatient);
 
         return PatientMapper.toDTO(newPatient);
     }
