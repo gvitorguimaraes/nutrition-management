@@ -9,11 +9,13 @@
         <module name="analytics-service" />
         <module name="apigateway" />
         <module name="authservice" />
+        <module name="integration-tests" />
         <module name="patientservice" />
         <module name="billing-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="initegration-tests" target="21" />
       <module name="teste" target="1.8" />
     </bytecodeTargetLevel>
   </component>

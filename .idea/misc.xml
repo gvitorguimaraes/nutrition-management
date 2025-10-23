@@ -10,10 +10,13 @@
         <option value="$PROJECT_DIR$/analytics-service/pom.xml" />
         <option value="$PROJECT_DIR$/apigateway/pom.xml" />
         <option value="$PROJECT_DIR$/authservice/pom.xml" />
+        <option value="$PROJECT_DIR$/initegration-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/integration-tests/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/initegration-tests/pom.xml" />
         <option value="$PROJECT_DIR$/teste/pom.xml" />
       </set>
     </option>

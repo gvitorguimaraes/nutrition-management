@@ -7,6 +7,9 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
+/**
+ * Handle Exceptions coming from AuthService
+ */
 @RestControllerAdvice
 public class JwtValidationException {
     @ExceptionHandler(WebClientResponseException.Unauthorized.class)
