@@ -1,0 +1,566 @@
+{
+  "version": "39.0.0",
+  "artifacts": {
+    "localstack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "localstack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}"
+      },
+      "metadata": {
+        "/localstack/NutritionManagmentVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPC6C5E349F"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet1SubnetD5095A28"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet1RouteTableFB76608B"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet1RouteTableAssociation5F492CDA"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet1DefaultRouteDC03FA12"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet1EIPC953F6D8"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet1NATGateway4ADB99C6"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet2Subnet06AC8817"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet2RouteTable40E60422"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet2RouteTableAssociation167F2942"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet2DefaultRouteC18597C9"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet2EIP76919E63"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPublicSubnet2NATGatewayAC2D7B50"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPrivateSubnet1Subnet21CB8CAB"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPrivateSubnet1RouteTableF355DE3C"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPrivateSubnet1RouteTableAssociation887D7555"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPrivateSubnet1DefaultRoute090386BB"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPrivateSubnet2Subnet9F378057"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPrivateSubnet2RouteTable2D3EBC2E"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPrivateSubnet2RouteTableAssociation5D7EAF07"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCPrivateSubnet2DefaultRouteBFFCEB17"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCIGWF9FE33D6"
+          }
+        ],
+        "/localstack/NutritionManagmentVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentVPCVPCGWC06E8F16"
+          }
+        ],
+        "/localstack/PostgresNutritionDB/SubnetGroup/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresNutritionDBSubnetGroupC49F8A3D"
+          }
+        ],
+        "/localstack/PostgresNutritionDB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresNutritionDBSecurityGroupF1E2626B"
+          }
+        ],
+        "/localstack/PostgresNutritionDB/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "localstackPostgresNutritionDBSecretD9B779D53fdaad7efa858a3daf9490cf0a702aeb"
+          }
+        ],
+        "/localstack/PostgresNutritionDB/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresNutritionDBSecretAttachment2D2A4F4C"
+          }
+        ],
+        "/localstack/PostgresNutritionDB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostgresNutritionDB6E08E61F"
+          }
+        ],
+        "/localstack/NutritionDBHealthCheck": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionDBHealthCheck"
+          }
+        ],
+        "/localstack/MskCluster": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MskCluster"
+          }
+        ],
+        "/localstack/NutritionManagmentCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentCluster7A54676E"
+          }
+        ],
+        "/localstack/NutritionManagmentCluster/DefaultServiceDiscoveryNamespace/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NutritionManagmentClusterDefaultServiceDiscoveryNamespace89877FBE"
+          }
+        ],
+        "/localstack/AuthServiceTask/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceTaskTaskRoleE466B974"
+          }
+        ],
+        "/localstack/AuthServiceTask/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceTask82E6680D"
+          }
+        ],
+        "/localstack/AuthServiceTask/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceTaskExecutionRoleA1258495"
+          }
+        ],
+        "/localstack/AuthServiceTask/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceTaskExecutionRoleDefaultPolicyF20AD0D3"
+          }
+        ],
+        "/localstack/AuthServiceLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceLogGroup34125B38"
+          }
+        ],
+        "/localstack/AuthService": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
+            "trace": [
+              "Annotations.addMessage (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "new BaseService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/base/base-service.js:1:8100)",
+              "new FargateService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/fargate/fargate-service.js:1:3551)",
+              "Kernel._Kernel_create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:549:25)",
+              "Kernel.create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:219:93)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15482:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15442:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15443:45)",
+              "process.processImmediate (node:internal/timers:485:21)"
+            ]
+          }
+        ],
+        "/localstack/AuthService/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthService3C2B741A"
+          }
+        ],
+        "/localstack/AuthService/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceSecurityGroup67F2FA7D"
+          }
+        ],
+        "/localstack/BillingServiceTask/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BillingServiceTaskTaskRole7A547BBF"
+          }
+        ],
+        "/localstack/BillingServiceTask/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BillingServiceTask30D9C66E"
+          }
+        ],
+        "/localstack/BillingServiceTask/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BillingServiceTaskExecutionRole11FE8DE2"
+          }
+        ],
+        "/localstack/BillingServiceTask/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BillingServiceTaskExecutionRoleDefaultPolicy4F4033C9"
+          }
+        ],
+        "/localstack/BillingServiceLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BillingServiceLogGroupDD61E740"
+          }
+        ],
+        "/localstack/BillingService": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
+            "trace": [
+              "Annotations.addMessage (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "new BaseService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/base/base-service.js:1:8100)",
+              "new FargateService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/fargate/fargate-service.js:1:3551)",
+              "Kernel._Kernel_create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:549:25)",
+              "Kernel.create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:219:93)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15482:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15442:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15443:45)",
+              "process.processImmediate (node:internal/timers:485:21)"
+            ]
+          }
+        ],
+        "/localstack/BillingService/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BillingServiceFEB36D90"
+          }
+        ],
+        "/localstack/BillingService/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BillingServiceSecurityGroup3783AD35"
+          }
+        ],
+        "/localstack/AnalyticsServiceTask/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyticsServiceTaskTaskRole1ABB10CB"
+          }
+        ],
+        "/localstack/AnalyticsServiceTask/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyticsServiceTaskC3AFBC47"
+          }
+        ],
+        "/localstack/AnalyticsServiceTask/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyticsServiceTaskExecutionRoleBAF654B2"
+          }
+        ],
+        "/localstack/AnalyticsServiceTask/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyticsServiceTaskExecutionRoleDefaultPolicy99868928"
+          }
+        ],
+        "/localstack/AnalyticsServiceLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyticsServiceLogGroupBD82F12A"
+          }
+        ],
+        "/localstack/AnalyticsService": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
+            "trace": [
+              "Annotations.addMessage (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "new BaseService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/base/base-service.js:1:8100)",
+              "new FargateService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/fargate/fargate-service.js:1:3551)",
+              "Kernel._Kernel_create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:549:25)",
+              "Kernel.create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:219:93)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15482:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15442:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15443:45)",
+              "process.processImmediate (node:internal/timers:485:21)"
+            ]
+          }
+        ],
+        "/localstack/AnalyticsService/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyticsServiceCD38C492"
+          }
+        ],
+        "/localstack/AnalyticsService/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyticsServiceSecurityGroupBA6AE98A"
+          }
+        ],
+        "/localstack/PatientServiceTask/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceTaskTaskRole4FB5B4E2"
+          }
+        ],
+        "/localstack/PatientServiceTask/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceTaskF865B565"
+          }
+        ],
+        "/localstack/PatientServiceTask/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceTaskExecutionRole3782903B"
+          }
+        ],
+        "/localstack/PatientServiceTask/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceTaskExecutionRoleDefaultPolicy3866E91E"
+          }
+        ],
+        "/localstack/PatientServiceLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceLogGroup4A5C3809"
+          }
+        ],
+        "/localstack/PatientService": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
+            "trace": [
+              "Annotations.addMessage (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "new BaseService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/base/base-service.js:1:8100)",
+              "new FargateService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/fargate/fargate-service.js:1:3551)",
+              "Kernel._Kernel_create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:549:25)",
+              "Kernel.create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:219:93)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15482:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15442:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15443:45)",
+              "process.processImmediate (node:internal/timers:485:21)"
+            ]
+          }
+        ],
+        "/localstack/PatientService/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceA65AB800"
+          }
+        ],
+        "/localstack/PatientService/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceSecurityGroup547BE1F2"
+          }
+        ],
+        "/localstack/APIGatewayTaskDefinition/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayTaskDefinitionTaskRole894A199F"
+          }
+        ],
+        "/localstack/APIGatewayTaskDefinition/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayTaskDefinition199BB1B7"
+          }
+        ],
+        "/localstack/APIGatewayTaskDefinition/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayTaskDefinitionExecutionRole555CBA21"
+          }
+        ],
+        "/localstack/APIGatewayTaskDefinition/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayTaskDefinitionExecutionRoleDefaultPolicy582C1C35"
+          }
+        ],
+        "/localstack/ApiGatewayLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiGatewayLogGroupA9770429"
+          }
+        ],
+        "/localstack/APIGatewayService/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceLBDA2B7609"
+          }
+        ],
+        "/localstack/APIGatewayService/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceLBSecurityGroup8524BFD1"
+          }
+        ],
+        "/localstack/APIGatewayService/LB/SecurityGroup/to localstackAPIGatewayServiceSecurityGroup37054EEE:4004": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceLBSecurityGrouptolocalstackAPIGatewayServiceSecurityGroup37054EEE4004CAF8FB32"
+          }
+        ],
+        "/localstack/APIGatewayService/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceLBPublicListenerD6FA7F47"
+          }
+        ],
+        "/localstack/APIGatewayService/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceLBPublicListenerECSGroupF9D8CC70"
+          }
+        ],
+        "/localstack/APIGatewayService/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceLoadBalancerDNS7C7318A3"
+          }
+        ],
+        "/localstack/APIGatewayService/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceServiceURL95056890"
+          }
+        ],
+        "/localstack/APIGatewayService/Service": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 [ack: @aws-cdk/aws-ecs:minHealthyPercent]",
+            "trace": [
+              "Annotations.addMessage (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "new BaseService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/base/base-service.js:1:8100)",
+              "new FargateService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs/lib/fargate/fargate-service.js:1:3551)",
+              "new ApplicationLoadBalancedFargateService (/tmp/jsii-kernel-1kj1HJ/node_modules/aws-cdk-lib/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:1:3340)",
+              "Kernel._Kernel_create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:549:25)",
+              "Kernel.create (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:219:93)",
+              "KernelHost.processRequest (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15482:36)",
+              "KernelHost.run (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15442:22)",
+              "Immediate._onImmediate (/tmp/jsii-java-runtime4075913879478749173/lib/program.js:15443:45)",
+              "process.processImmediate (node:internal/timers:485:21)"
+            ]
+          }
+        ],
+        "/localstack/APIGatewayService/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceA5206149"
+          }
+        ],
+        "/localstack/APIGatewayService/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceSecurityGroup98F3B93B"
+          }
+        ],
+        "/localstack/APIGatewayService/Service/SecurityGroup/from localstackAPIGatewayServiceLBSecurityGroup32B4CA42:4004": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayServiceSecurityGroupfromlocalstackAPIGatewayServiceLBSecurityGroup32B4CA424004CA85E4CD"
+          }
+        ]
+      },
+      "displayName": "localstack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

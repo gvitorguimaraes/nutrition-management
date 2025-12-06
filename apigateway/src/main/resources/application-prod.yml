@@ -1,0 +1,34 @@
+server:
+  port: 4004
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            ##
+            ## PATIENT-SERVICE
+            - id: patient-service-route
+              uri: http://host.docker.internal:4000
+              predicates:
+                - Path=/api/patient/**
+              filters:
+                - StripPrefix=1
+                - JwtValidation   # related to JwtValidationGatewayFilterFactory
+
+            - id: api-docs-patient-route
+              uri: http://host.docker.internal:4000
+              predicates:
+                - Path=/api-docs/patient
+              filters:
+                - RewritePath=/api-docs/patient,/v3/api-docs
+
+            ##
+            ## AUTH-SERVICE
+            - id: auth-service-route
+              uri: http://host.docker.internal:4005
+              predicates:
+                - Path=/auth/**
+              filters:
+                - StripPrefix=1
